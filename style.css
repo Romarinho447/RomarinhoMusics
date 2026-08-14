@@ -1,8 +1,9 @@
 body {
-    background-color: rgb(125, 172, 127);
+    background-color: rgb(238, 255, 239);
 }
 
 h1 {
     color: bisque;
     font-size: 75px;
+    font: bolder;
 }
