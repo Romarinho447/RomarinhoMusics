@@ -1,42 +1,56 @@
+/* Configurações Gerais da Página */
 body {
     background: linear-gradient(180deg, #0b1220 0%, #101a2b 100%);
-}
-h1 {
-    color: #ffffff;
-    font-size: 75px;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 40px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
     font-family: Arial, sans-serif;
-}
-h2 {
-    color: #e5e5e5;
-    font-size: 32px;
-    text-align: center;
-    border-top: 1px solid #333333;
-    padding-top: 30px;
-    font-family: Verdana, sans-serif;
-}
-p {
     color: #ffffff;
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 80px;
-}
-iframe {
-    width: 500px;
-    height: 281px;
-    display: block;
-    margin: 30px auto;
-    border-radius: 8px;
-    border: 1px solid #7f8fa6;
-    transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-iframe:hover {
-    transform: scale(1.01);
-    border-color: #aab8cc;
+/* Link de Voltar */
+a[href="index.html"] {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    color: #999999;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
+
+a[href="index.html"]:hover {
+    color: #f2f2f2;
+    transform: scale(1.05);
+}
+
+/* Tipografia */
+h1 {
+    color: #f2f2f2;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #cccccc;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Contêiner da Grade de Cards (Home) */
+.playlists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo do Card Individual */
 .playlist-card {
     width: 350px;
     display: block;
@@ -46,64 +60,56 @@ iframe:hover {
     border: 1px solid #7f8fa6;
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
+
+.playlist-card:hover {
+    transform: scale(1.02);
+    border-color: #aab8cc;
+}
+
 .playlist-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     display: block;
 }
+
 .playlist-info {
     background-color: #202b3d;
-    padding: 25px 20px;
-    height: 28px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .playlist-info h2 {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     margin: 0;
-    border-top: none;
-    padding-top: 0;
     font-family: Verdana, sans-serif;
+    border: none;
+    padding: 0;
 }
-a[href="index.html"] {
-    position: absolute;
-    top: 25px;
-    left: 30px;
 
-    color: #999999;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.2s ease;
-}
-a[href="index.html"]:hover {
-    color: #f2f2f2;
-    transform: scale(1.05);
-}
-h1 {
-    color: #f2f2f2;
-    font-size: 75px;
-    text-align: center;
-    margin-bottom: 10px;
-    font-family: Arial, sans-serif;
-}
+/* Exibição das Músicas / Vídeos (Páginas Internas) */
 .playlist-musics {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    padding: 20px;
 }
-iframe:hover {
-    transform: scale(1.01);
-}
+
 iframe {
-    transition: transform 0.2s ease;
-}
-.playlist-card {
+    width: 350px;
+    height: 200px;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #7f8fa6;
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.playlist-card:hover {
-    transform: scale(1.01);
+iframe:hover {
+    transform: scale(1.02);
     border-color: #aab8cc;
 }
