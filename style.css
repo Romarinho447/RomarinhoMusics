@@ -37,6 +37,14 @@ iframe:hover {
     transform: scale(1.01);
     border-color: #aab8cc;
 }
+.playlists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
 .playlist-card {
     width: 350px;
     display: block;
