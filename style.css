@@ -61,56 +61,66 @@ p {
     margin-bottom: 50px;
 }
 
-/* Grade de Playlists na Home */
+/* Container dos Cards (Aumentando espaçamento geral) */
 .playlists {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
-    max-width: 1200px;
+    gap: 40px; /* Maior espaçamento entre os cards */
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-/* Cards Interativos */
+/* Card Principal (Mais alto, mais largo e mais arredondado) */
 .playlist-card {
-    width: 280px;
+    width: 320px; /* Card maior (era 280px) */
     background: #162235;
-    border-radius: 16px;
+    border-radius: 24px; /* Bordas bem mais arredondadas */
     overflow: hidden;
     text-decoration: none;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .playlist-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.6);
 }
 
-.playlist-card img {
+/* Banner de Imagem Maior */
+.card-banner {
+    position: relative;
     width: 100%;
-    height: 180px;
+    height: 220px; /* Imagem mais alta */
+}
+
+.card-banner img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
 
+/* Área da Legenda (Fonte moderna e mais espaçada) */
 .playlist-info {
-    padding: 18px 15px;
+    padding: 24px 20px; /* Mais espaço interno */
     background-color: #162235;
     text-align: center;
 }
 
 .playlist-info h2 {
     color: #ffffff;
-    font-size: 16px;
-    font-weight: 600;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 18px; /* Fonte moderna e mais nítida */
+    font-weight: 700;
+    letter-spacing: -0.3px; /* Estilo tipográfico moderno */
     margin: 0;
     border: none;
     padding: 0;
 }
-
 /* Área de Músicas / Vídeos (Páginas Internas) */
 .playlist-musics {
     display: flex;
